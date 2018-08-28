@@ -1830,6 +1830,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     transition: all 0.5s ease-in-out;
 }
 
+#inverted {
+    border-color: black;
+    color: black;
+}
+
 .home-content__buttons .btn:last-child {
     margin-right: 0;
 }
@@ -1838,6 +1843,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .home-content__buttons .btn:focus {
     background: #FFFFFF !important;
     color: #000000;
+}
+
+#inverted:hover, 
+#inverted:focus {
+    background: black !important;
+    color: white;
 }
 
 .home-content__scroll {
@@ -2198,8 +2209,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-    padding-top: 16.2rem;
-    padding-bottom: 9rem;
+    padding-top: 13.2rem;
+    padding-bottom: 6rem;
     background-color: lightblue;
     color: #010507;
     position: relative;
@@ -2368,8 +2379,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-    padding-top: 16.2rem;
-    padding-bottom: 13.2rem;
+    padding-top: 13.2rem;
+    padding-bottom: 10.2rem;
     background-color: #FFFFFF;
     color: #757575;
     position: relative;
