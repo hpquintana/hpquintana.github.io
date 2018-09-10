@@ -1,0 +1,290 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/desktop-nav.js"></script>
+    <script src="js/mobile-nav.js"></script>
+    <script src="js/quote-calc.js"></script>
+</head>
+
+<body style="overflow-x: hidden;">
+    <div class="mobile-side-panel" id='side_panel'>
+        <div class="relative-container"> <img class="mobile-close-button" src="img/mobile_close.png" id="close_button" alt="Carpet Magic close button" />
+            <div class="mobile-logo-container">
+                <h2 class="mobile-logo-text">Carpet Magic</h2> </div>
+            <div class="mobile-tab"> <a href="index.html" class="mobile-link" id="active">Home</a> </div>
+            <div class="mobile-tab"> <a href="cleaning.html" class="mobile-link">Carpet Cleaning</a> </div>
+            <div class="mobile-tab"> <a href="other.html" class="mobile-link">Other Services</a> </div>
+            <div class="mobile-tab  mobile-active"> <a href="#" class="mobile-link">Free Quote</a> </div>
+            <div class="mobile-tab"> <a href="contact.html" class="mobile-link">Contact</a> </div>
+        </div>
+    </div>
+    <div class="content" id="content">
+        <div class="mobile-header"> <img alt="Carpet Magic Menu Icon" class="mobile-nav" src="img/mobile_nav.png">
+            <h2 class="mobile-nav-title">Free Quote</h2> </div>
+        <div class="main vertical-horizontal">
+            <div>
+                <div class="carpet-main vertical-horizontal medium-large-font">
+                    <p>Carpet Magic</p>
+                </div>
+                <div class="main-description medium-large-font">
+                    <p>PREMIERE</p>
+                    <p class="large-font">CLEANING</p>
+                    <p class="small-font white-font">Carpet Magic is a family owned and operated business that has been serving the El Paso area for over 30 years</p>
+                </div>
+                <a href="quote.html" class="round-link">
+                    <div class="quote-button vertical-horizontal small-font">
+                        <p class=' white-font'>Free Quote</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="nav-filler" style="">
+            <div class="nav-container">
+                <div class="nav vertical-horizontal">
+                    <div class="desktop-link vertical-horizontal"> <a href="index.html">HOME</a> </div>
+                    <div class="desktop-link vertical-horizontal"> <a href="cleaning.html">CARPET CLEANING</a> </div>
+                    <div class="desktop-link vertical-horizontal"> <a href="other.html">OTHER SERVICES</a> </div>
+                    <div class="desktop-link active vertical-horizontal"> <a href="#">FREE QUOTE</a> </div>
+                    <div class="desktop-link vertical-horizontal"> <a href="contact.html">CONTACT</a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="quote-header">
+            <h2>THE BEST CARPET CLEANING IN THE EL PASO AREA</h2> </div>
+        <div class="quote-container">
+            <p class="quote-title quote-title-margin">If you have any questions or would like to schedule call us at <a a href="tel:+1-915-598-4325" style="text-decoration: none;" class="red-font">(915)598-4325</a></p>
+            <p class="quote-subtitle quote-subtitle-margin">What kind of cleaning services are you looking for?</p>
+            <input type="checkbox" id="c1" name="cc" />
+            <label class="checkbox-label" for="c1">Carpet</label>
+            <br/>
+            <div class="quote-sub-container" id="carpet-container">
+                <div class="flex-container quote-padding">
+                    <p class="third-container"></p>
+                    <p class="third-container bold quote-table-title quote-table-padding">Standard</p>
+                    <p class="third-container bold quote-table-title quote-table-padding">Premium</p>
+                </div>
+                <div class="flex-container quote-padding">
+                    <p class="third-container bold quote-table-title">&#35; of Rooms</p>
+                    <div class="third-container">
+                        <input type="number" id="reg-cleaning" name="reg-cleaning" class="quote-input" min="0" value="0"> </div>
+                    <div class="third-container">
+                        <input type="number" id="prem-cleaning" name="prem-cleaning" class="quote-input" min="0" value="0"> </div>
+                </div>
+                <div class="flex-container quote-padding">
+                    <p class="third-container bold quote-table-title">&#35; of Staircases</p>
+                    <div class="third-container">
+                        <input type="number" id="reg-cleaning-stair" name="reg-cleaning-stair" class="quote-input" min="0" value="0"> </div>
+                    <div class="third-container">
+                        <input type="number" id="prem-cleaning-stair" name="prem-cleaning-stair" class="quote-input" min="0" value="0"> </div>
+                </div>
+            </div>
+            <input type="checkbox" id="c2" name="cc" />
+            <label class="checkbox-label" for="c2">Upholstery</label>
+            <br/>
+            <div class="quote-sub-container" id="upholstery-container">
+                <div class="flex-container quote-padding">
+                    <p class="third-container"></p>
+                    <p class="third-container bold quote-table-title quote-table-padding">Total</p>
+                </div>
+                <div class="flex-container quote-padding">
+                    <p class="third-container bold quote-table-title">&#35; of Sofas</p>
+                    <div class="third-container">
+                        <input type="number" id="sofa-q" name="sofa" class="quote-input" min="0" value="0"> </div>
+                </div>
+                <div class="flex-container quote-padding">
+                    <p class="third-container bold quote-table-title">&#35; of Loveseats</p>
+                    <div class="third-container">
+                        <input type="number" id="loveseat-q" name="loveseat" class="quote-input" min="0" value="0"> </div>
+                </div>
+                <div class="flex-container quote-padding">
+                    <p class="third-container bold quote-table-title">&#35; of Sectionals</p>
+                    <div class="third-container">
+                        <input type="number" id="sectional-q" name="sectional" class="quote-input" min="0" value="0"> </div>
+                </div>
+                <div class="flex-container quote-padding">
+                    <p class="third-container bold quote-table-title">&#35; of Ez Chairs</p>
+                    <div class="third-container">
+                        <input type="number" id="ez-q" name="ez-chair" class="quote-input" min="0" value="0"> </div>
+                </div>
+                <div class="flex-container quote-padding">
+                    <p class="third-container bold quote-table-title">&#35; of Recliners</p>
+                    <div class="third-container">
+                        <input type="number" id="recliner-q" name="recliner" class="quote-input" min="0" value="0"> </div>
+                </div>
+                <div class="flex-container quote-padding">
+                    <p class="third-container bold quote-table-title">&#35; of Ottomans</p>
+                    <div class="third-container">
+                        <input type="number" id="otto-q" name="ottoman" class="quote-input" min="0" value="0"> </div>
+                </div>
+                <div class="flex-container quote-padding">
+                    <p class="third-container bold quote-table-title">&#35; of Dining Seats</p>
+                    <div class="third-container">
+                        <input type="number" id="dining-q" name="dining-seat" class="quote-input" min="0" value="0"> </div>
+                </div>
+                <div class="flex-container quote-padding">
+                    <p class="third-container bold quote-table-title">&#35; of Dining Seats with backs</p>
+                    <div class="third-container">
+                        <input type="number" id="dining-b-q" name="dining-seat-b" class="quote-input" min="0" value="0"> </div>
+                </div>
+            </div>
+            <input type="checkbox" id="c3" name="cc" />
+            <label class="checkbox-label" for="c3">Other</label>
+            <br/>
+            <div class="quote-sub-container" id="other-container">
+                <div class="flex-container quote-padding">
+                    <p class="third-container"></p>
+                    <p class="third-container bold quote-table-title quote-table-padding">Total</p>
+                </div>
+                <div class="flex-container quote-padding">
+                    <p class="third-container bold quote-table-title">&#35; of Airducts</p>
+                    <div class="third-container">
+                        <input type="number" id="airduct-q" name="airduct" class="quote-input" min="0" value="0"> </div>
+                </div>
+                <div class="flex-container quote-padding">
+                    <p class="third-container bold quote-table-title">&#35; of Dryer Vents</p>
+                    <div class="third-container">
+                        <input type="number" id="airvent-q" name="airvent" class="quote-input" min="0" value="0"> </div>
+                </div>
+                <div class="flex-container quote-padding">
+                    <p class="third-container bold quote-table-title">&#35; of Ceramic Tile and Grout (square feet)</p>
+                    <div class="third-container">
+                        <input type="number" id="tile-q" name="tile" class="quote-input" min="0" value="0"> </div>
+                </div>
+            </div>
+            <div class="min-text-container">
+                <p class="minimum-text" id="minimum-text"></p>
+            </div>
+            <div class="quote-section"> </div>
+        </div>
+        <div class="quote-footer">
+            <p class="quote-total-text">Estimated Pre-Tax Total: <span id="quote-total">$0.00</span></p>
+            <p class="quote-msg"></p>
+        </div>
+        <div class="footer-container">
+            <div class="main-bottom vertical-horizontal">
+                <div class="">
+                    <div class="carpet-main vertical-horizontal medium-large-font">
+                        <p>Carpet Magic</p>
+                    </div>
+                    <div class="main-description medium-large-font">
+                        <p class="extra-large-font">GET CLEAN</p>
+                        <p class="small-font white-font">Carpet Magic is a family owned and operated business that has been serving the El Paso area for more than 30 years</p>
+                    </div>
+                    <div class="quote-button vertical-horizontal small-font">
+                        <p class='white-font'>Call Now</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map overlay">
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBCh-9QzVHaVM5VpNsVzc8nAMTMRtAQ_k"></script>
+                <div id='map' class="gmap-canvas" style=''></div>
+                <style>
+                    #map img {
+                        max-width: none!important;
+                        background: none!important
+                    }
+                </style>
+                <script type='text/javascript'>
+                    function init_map() {
+                        var myOptions = {
+                            zoom: 10
+                            , center: new google.maps.LatLng(31.74844906672138, -106.34219943437499)
+                            , mapTypeId: google.maps.MapTypeId.ROADMAP
+                            , styles: [{
+                                "featureType": "administrative"
+                                , "elementType": "labels.text.fill"
+                                , "stylers": [{
+                                    "color": "#444444"
+                            }]
+                        }, {
+                                "featureType": "landscape"
+                                , "elementType": "all"
+                                , "stylers": [{
+                                    "color": "#f2f2f2"
+                            }]
+                        }, {
+                                "featureType": "poi"
+                                , "elementType": "all"
+                                , "stylers": [{
+                                    "visibility": "off"
+                            }]
+                        }, {
+                                "featureType": "road"
+                                , "elementType": "all"
+                                , "stylers": [{
+                                    "saturation": -100
+                            }, {
+                                    "lightness": 45
+                            }]
+                        }, {
+                                "featureType": "road.highway"
+                                , "elementType": "all"
+                                , "stylers": [{
+                                    "visibility": "simplified"
+                            }]
+                        }, {
+                                "featureType": "road.arterial"
+                                , "elementType": "labels.icon"
+                                , "stylers": [{
+                                    "visibility": "off"
+                            }]
+                        }, {
+                                "featureType": "transit"
+                                , "elementType": "all"
+                                , "stylers": [{
+                                    "visibility": "off"
+                            }]
+                        }, {
+                                "featureType": "water"
+                                , "elementType": "all"
+                                , "stylers": [{
+                                    "color": "#46bcec"
+                            }, {
+                                    "visibility": "on"
+                            }]
+                        }]
+                        };
+                        map = new google.maps.Map(document.getElementById('map'), myOptions);
+                        marker = new google.maps.Marker({
+                            map: map
+                            , position: new google.maps.LatLng(31.795905, -106.358409)
+                        });
+                        infowindow = new google.maps.InfoWindow({
+                            content: '<strong>Carpet Magic</strong><br>El Paso, TX, USA<br>'
+                        });
+                        google.maps.event.addListener(marker, 'click', function () {
+                            infowindow.open(map, marker);
+                        });
+                        infowindow.open(map, marker);
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);
+                </script>
+            </div>
+            <div class="footer vertical-horizontal">
+                <div class="footer-content">
+                    <div class="footer-social-media">
+                        <div class="footer-social-link">
+                            <a href="www.google.com"><img class="social-media-icon" src="img/twitter_icon.png"></a>
+                        </div>
+                        <div class="footer-social-link">
+                            <a href="www.google.com"><img class="social-media-icon" src="img/facebook_icon.png"></a>
+                        </div>
+                        <div class="footer-social-link">
+                            <a href="www.google.com"><img class="social-media-icon" src="img/google_icon.png"></a>
+                        </div>
+                    </div>
+                    <div class="footer-text">
+                        <p>&#169; 2016 Carpet Magic, Inc All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
