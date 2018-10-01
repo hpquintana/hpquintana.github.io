@@ -423,44 +423,163 @@ ul#nav li.current a {
 
 .wordpress {
     width: 50%;
+/*
     -moz-animation: illustrator 2s ease;
     -webkit-animation: illustrator 2s ease;
+*/
 }
 
 .css {
     width: 90%;
+/*
     -moz-animation: illustrator 2s ease;
     -webkit-animation: illustrator 2s ease;
+*/
 }
 
 .html5 {
     width: 95%;
+/*
     -moz-animation: illustrator 2s ease;
     -webkit-animation: illustrator 2s ease;
+*/
 }
 
 .jquery {
     width: 90%;
+/*
     -moz-animation: illustrator 2s ease;
     -webkit-animation: illustrator 2s ease;
+*/
 }
 
 .node {
     width: 80%;
+/*
     -moz-animation: illustrator 2s ease;
     -webkit-animation: illustrator 2s ease;
+*/
 }
 
 .php {
     width: 70%;
+/*
     -moz-animation: illustrator 2s ease;
     -webkit-animation: illustrator 2s ease;
+*/
 }
 
 .sql {
     width: 85%;
     -moz-animation: illustrator 2s ease;
     -webkit-animation: illustrator 2s ease;
+}
+
+.java {
+    width: 80%;
+/*
+    -moz-animation: illustrator 2s ease;
+    -webkit-animation: illustrator 2s ease;
+*/
+}
+
+.react {
+    width: 50%;
+/*
+    -moz-animation: illustrator 2s ease;
+    -webkit-animation: illustrator 2s ease;
+*/
+}
+
+.kotlin {
+    width: 55%;
+/*
+    -moz-animation: illustrator 2s ease;
+    -webkit-animation: illustrator 2s ease;
+*/
+}
+
+.android {
+    width: 85%;
+/*
+    -moz-animation: illustrator 2s ease;
+    -webkit-animation: illustrator 2s ease;
+*/
+}
+
+.nosql {
+    width: 90%;
+/*
+    -moz-animation: illustrator 2s ease;
+    -webkit-animation: illustrator 2s ease;
+*/
+}
+
+.firebase {
+    width: 95%;
+/*
+    -moz-animation: illustrator 2s ease;
+    -webkit-animation: illustrator 2s ease;
+*/
+}
+
+/*
+@-moz-keyframes nosql {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 90%;
+    }
+}
+*/
+
+/*
+@-moz-keyframes firebase {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 95%;
+    }
+}
+*/
+/*
+
+@-moz-keyframes android {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@-moz-keyframes kotlin {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
+@-moz-keyframes react {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@-moz-keyframes java {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 80%;
+    }
 }
 
 @-moz-keyframes node {
@@ -486,7 +605,7 @@ ul#nav li.current a {
         width: 0px;
     }
     100% {
-        width: 850%;
+        width: 85%;
     }
 }
 
@@ -580,15 +699,6 @@ ul#nav li.current a {
     }
 }
 
-@-webkit-keyframes html5 {
-    0% {
-        width: 0px;
-    }
-    100% {
-        width: 80%;
-    }
-}
-
 @-webkit-keyframes jquery {
     0% {
         width: 0px;
@@ -597,6 +707,7 @@ ul#nav li.current a {
         width: 50%;
     }
 }
+*/
 
 /* ------------------------------------------------------------------ */
 
