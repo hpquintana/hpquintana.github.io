@@ -9,7 +9,7 @@
         "title": "Hello World",
         "excerpt": "“Hello World!”\n\nThat’s what the first program I ever wrote printed out, actually it just did that and nothing else. Nevertheless, it sparked a curiosity within me that is still going strong to this day. That curiosity has taken me on many paths, allowed me to meet some great people, and caused many late nights. But I wouldn’t change it for anything else. That is why I’ve decided to start this blog, to share my thoughts, experiences, and anything else related to programming.\n\nI’m still not sure what exactly I’ll be posting on here. In the immediate future I’ll be using it as a source of self accountability, logging what I work on each day for personal growth, with tidbits of useful CS tools/sites/knowledge. Please look forward to my next post describing the platfrom this blog is built on.\n",
         "content": "“Hello World!”\n\nThat’s what the first program I ever wrote printed out, actually it just did that and nothing else. Nevertheless, it sparked a curiosity within me that is still going strong to this day. That curiosity has taken me on many paths, allowed me to meet some great people, and caused many late nights. But I wouldn’t change it for anything else. That is why I’ve decided to start this blog, to share my thoughts, experiences, and anything else related to programming.\n\nI’m still not sure what exactly I’ll be posting on here. In the immediate future I’ll be using it as a source of self accountability, logging what I work on each day for personal growth, with tidbits of useful CS tools/sites/knowledge. Please look forward to my next post describing the platfrom this blog is built on.\n",
-        "url": "/general/intro/2018/12/13/Hello-world/"
+        "url": "hpquintana.github.io/blog/general/intro/2018/12/13/Hello-world/"
       },
     
   
@@ -19,21 +19,21 @@
     "title": "Categories",
     "excerpt": "Category index\n",
     "content": "\n",
-    "url": "/categories/"
+    "url": "hpquintana.github.io/blog/categories/"
   },
   
   {
     "title": "Blog++",
     "excerpt": "Hector Quintana’s blog about computer science and things.\n",
     "content": "Welcome to my blog. I’ll be posting my thoughts on computer science and such here. At the very minimum I’ll be posting weekly. Check out my intro post below.\n\nHello World!\n\nAcknowledgement\n\n\n  The blog uses the Alembic Jekyll created by David Darnes.\n\n",
-    "url": "/"
+    "url": "hpquintana.github.io/blog/"
   },
   
   {
     "title": "Search",
     "excerpt": "Search for a page or post you’re looking for\n",
     "content": "{% include site-search.html %}\n",
-    "url": "/search/"
+    "url": "hpquintana.github.io/blog/search/"
   }
   
 ]
