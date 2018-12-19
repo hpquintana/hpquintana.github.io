@@ -6,7 +6,7 @@ categories:
 feature_image: "https://picsum.photos/2560/600?image=872"
 ---
 
-"Hello World!" 
+> "Hello World!" 
 
 That's what the first program I ever wrote printed out, actually it just did that and nothing else. Nevertheless, it sparked a curiosity within me that is still going strong to this day. That curiosity has taken me on many paths, allowed me to meet some great people, and caused many late nights. But I wouldn't change it for anything else. That is why I've decided to start this blog, to share my thoughts, experiences, and anything else related to programming. 
 

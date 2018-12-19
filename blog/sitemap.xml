@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/hpquintana.github.io/blog/general/intro/2018/12/13/Hello-world/</loc>
+<loc>https://alembic.darn.es/hpquintana.github.io/blog/general/intro/2018/12/13/Hello-world/</loc>
 <lastmod>2018-12-13T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/hpquintana.github.io/blog/categories/</loc>
+<loc>https://alembic.darn.es/hpquintana.github.io/blog/general/jekyll/2018/12/17/jekyll/</loc>
+<lastmod>2018-12-17T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/hpquintana.github.io/blog/blog/</loc>
+<loc>https://alembic.darn.es/hpquintana.github.io/blog/general/2018/12/19/Blog-Content/</loc>
+<lastmod>2018-12-19T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/hpquintana.github.io/blog/</loc>
+<loc>https://alembic.darn.es/hpquintana.github.io/blog/categories/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/hpquintana.github.io/blog/search/</loc>
+<loc>https://alembic.darn.es/hpquintana.github.io/blog/blog/</loc>
+</url>
+<url>
+<loc>https://alembic.darn.es/hpquintana.github.io/blog/</loc>
+</url>
+<url>
+<loc>https://alembic.darn.es/hpquintana.github.io/blog/search/</loc>
 </url>
 </urlset>
