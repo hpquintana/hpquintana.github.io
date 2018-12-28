@@ -1,21 +1,7 @@
-*.gem
-.sass-cache
-bootstrap.css
-bootstrap-responsive.css
+_site/
+.sass-cache/
+.jekyll-metadata
+alembic-jekyll-theme-*.gem
 Gemfile.lock
-*.gemfile.lock
-.rvmrc
-.rbenv-version
+**/Gemfile.lock
 
-# Ignore bundler config
-/.bundle
-/vendor/cache
-/vendor/bundle
-tmp/
-test/screenshots/
-test/dummy_rails/log/*.log
-test/dummy_rails/public/assets/
-.DS_Store
-node_modules
-/.idea
-# /blog-source/_site
