@@ -8,7 +8,8 @@ body {
   overflow-x: hidden;
 }
 
-.container {
+.container,
+.disqus {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -133,9 +134,9 @@ body {
   @include flex(0, 0, auto);
 }
 
-.content {
+.content, {
   @include breakpoint(break-1) {
-    width: 62%;
+    width: 76%;
   }
 }
 
