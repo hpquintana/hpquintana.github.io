@@ -20,11 +20,11 @@ When learning a new programming language, topic, SDK, or API I typically create 
 
 ### Deep Dives & Tutorials
 
-When learning a new programming language you often have a large choice of tutorials to guide you through the process. But I often find that these just teach _how_ to use the language and not _why_. During my time in university discussions made material really stick with me, it made it material clear and easy to remember. Therefore I want to write some posts that teach you not only how to use a technology but why you would use it and even when you would certain features over others.
+When learning a new programming language you often have a large choice of tutorials to guide you through the process. But I often find that these just teach _how_ to use the language and not _why_. During my time in university, discussions made material really stick with me, it made it material clear and easy to remember. Therefore I want to write some posts that teach you not only how to use a language but why you would use it and even when you would certain features of it over others.
 
 ### History & Facts
 
-Learning about the history of a language and the people that created it may not help your ability to use it but I find it interesting. At the moment not many tutorials mention history besides the date of availabilty. I want to change that and share the story of programming languages and more. After all if you learn why a technology was created and how it has evolved over the years then you will defintely be better equipped to make an informed choice if given different options.
+Learning about the history of a language and the people that created it may not help your ability to use it but I find it interesting. At the moment not many tutorials mention history besides the date of availability. I want to change that and share the story of programming languages and more. After all, if you learn why a language was created and how it has evolved over the years then you will definitely be better equipped to make an informed choice if given different options.
 
 ### Highlight Programmers
 
@@ -32,6 +32,6 @@ This touches upon my last point but I feel programming is very impersonal. Techn
 
 ## Closing Thoughts
 
-Well that's what I have in plan for the blog right now. I'm sure we've all begun a project with a perfect plan only to see it turn out completely different so I'm not sure if I'll achieve my goals. But I'll sum up what I want to do with this blog with one sentence.
+Well, that's what I have in plan for the blog right now. I'm sure we've all begun a project with a perfect plan only to see it turn out completely different so I'm not sure if I'll achieve my goals. But I'll sum up what I want to do with this blog with one sentence.
 
 > "I want this blog to help Computer Science grow."
