@@ -87,10 +87,11 @@ css_inline: false # Will insert all styles into a single <style> block in the <h
 
 # 8. Site navigation
 navigation_header:
-  Home: /
-  Blog: /blog/
+  E-Resume: /
+  Blog Home: /blog/
   Categories: /categories/
   Search: /search/
+  About: /about/
 
 navigation_footer:
   Alembic Theme by David Darnes: https://darn.es

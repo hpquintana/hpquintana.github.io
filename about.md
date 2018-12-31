@@ -1,9 +1,8 @@
 ---
 title: Blog++
 feature_text: |
-  ## Blog++
-  A blog for computer science things and anything else
-feature_image: "https://picsum.photos/1300/400?image=989"
+  Computer Science and Things
+feature_image: /assets/img/gallery/pexels-2.jpg
 excerpt: "Hector Quintana's blog about computer science and things."
 ---
 
