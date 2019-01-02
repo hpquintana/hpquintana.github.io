@@ -6,9 +6,13 @@ feature_image: /assets/img/gallery/pexels-2.jpg
 excerpt: "Hector Quintana's blog about computer science and things."
 ---
 
-Welcome to my blog. I'll be posting my thoughts on computer science and such here. At the very minimum I'll be posting weekly. Check out my intro post below. 
+Hey there, my name is Hector and this is my blog. The blog mainly focuses on computer science related topics, as such posts will mainly be focused on tutorials, discussions, and more related to CS. That being said the target audience the blog is anyone that is interested in such topics. 
 
-[Hello World!]({{ site.baseurl }}{% post_url 2018-12-27-Hello-World %})
+At the moment the blog will contain the following series of posts:
+
+* [Behind The Code]({{ site.baseurl }}/categories/#behind-the-code) - Interview series with programmers.
+
+
 
 # Acknowledgement
 
