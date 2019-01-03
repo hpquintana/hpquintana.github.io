@@ -4,7 +4,7 @@ categories:
 - General
 - Intro
 feature_text: "Runnin' Down A Dream"
-feature_image: "https://picsum.photos/2560/600?image=872"
+feature_image: /assets/img/gallery/pexels-4.jpg
 ---
 > "Hello World!" 
 
@@ -14,7 +14,7 @@ If you have any experience programming then you're probably familiar with that p
 
 At the moment I'm not completely sure what I'll be writing here but I do have some plans.
 
-### Daily Logs
+### Programming Logs
 
 When learning a new programming language, topic, SDK, or API I typically create a small project. Therefore one of the things I'll be using the blog for will be to share my experiences when learning a new topic. These experiences may be an issue I had when following a tutorial or an explanation of what I worked on. The goal of these posts will be to help me chronicle my knowledge while motivating me to go out and keep expanding my programming skills.
 
