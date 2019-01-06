@@ -4,6 +4,7 @@ categories:
 - Weekly Update
 feature_text: "unravel"
 feature_image: /assets/img/posts/weekly/1-7-18/feature.jpg
+feature_url: https://youtu.be/YAyRYn-CjxY
 ---
 This will the first in a series of weekly posts where I share what I'm working on, studying, and/or attending. I'll also be sharing status updates on my projects and upcoming blog content. So let's just jump into it.
 
