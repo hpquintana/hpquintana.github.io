@@ -1,0 +1,50 @@
+{% if site.posts %}
+<div id="colorlib-blog">
+    <div class="container">
+        <div class="row text-center">
+            <h2 class="bold">Blog</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+                <span>Blog</span>
+                <h2>Read Our Case</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="rotate">
+                    <h2 class="heading">Our Blog</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row animate-box">
+            <div class="owl-carousel1">
+                {% for post in site.posts limit: 6 %}
+                <div class="item">
+                    <div class="col-md-12">
+                        <div class="article">
+                            <a href="{{ post.url }}" class="blog-img">
+                                {% if post.featured_image %}
+                                    <img class="img-responsive" src="{{ post.featured_image }}" alt="{{ post.featured_image_alt }}">
+                                {% else %}
+                                    <img class="img-responsive" src="{{ "/assets/images/img-1.jpg" | relative_url }}" alt="work cover image">
+                                {% endif %}
+                                <div class="overlay"></div>
+                                <div class="link">
+                                    <span class="read">Read more</h2>
+                                </div>
+                            </a>
+                            <div class="desc">
+                                <span class="meta">{{ post.date | date: "%-d, %B %Y" }}</span>
+                                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                                <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

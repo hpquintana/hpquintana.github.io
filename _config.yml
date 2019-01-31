@@ -1,14 +1,10 @@
-# Site configuration
-# 1. Files excluded from Jekyll builds
-# 2. Installed Gems
-# 3. Gem settings
-# 4. Jekyll settings
-# 5. Collections
-# 6. Jekyll collections settings
-# 7. Site settings
-# 8. Site navigation
+sass:
+  style: compressed # Style compression
+permalink: pretty
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: America/Denver
 
-# 1. Files excluded from Jekyll builds
+# Files to exclude from build
 exclude:
 - README.md
 - CODE_OF_CONDUCT.md
@@ -18,22 +14,28 @@ exclude:
 - CNAME
 - Gemfile
 - Gemfile.lock
-- alembic-jekyll-theme.gemspec
 
-# 2. Installed Gems
+# Installed Gems
 plugins:
 - jekyll-sitemap
 - jekyll-mentions
-- jekyll-paginate
+- jekyll-paginate-v2
 - jekyll-seo-tag
 - jekyll-redirect-from
 - jekyll-default-layout
-- jekyll-feed
 - jemoji
 
-# 3. Gem settings
-paginate: 5 # jekyll-paginate > items per page
-paginate_path: blog/page:num # jekyll-paginate > blog page
+# Gem settings
+pagination:
+  enabled: true
+  collection: 'posts'
+  per_page: 3
+  permalink: "/page/:num/"
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
 twitter:
   username: hpquintana_dev # jekyll-seo-tag > Owners twitter username
@@ -44,24 +46,7 @@ social: # jekyll-seo-tag > social overrides
     - https://twitter.com/hpquintana_dev
     - https://github.com/hpquintana
 
-# 4. Jekyll settings
-sass:
-  style: compressed # Style compression
-permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
-excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Europe/London # Timezone for blog posts and alike
-
-# 5. Collections
-collections:
-  posts:
-    title: Posts # Needed for Siteleaf
-    output: true
-    #description: "My thoughts and ideas" # The post list page content
-    feature_text: "Dream On"
-    feature_image: /assets/img/gallery/main.jpeg
-    feature_url: https://youtu.be/3-2u2lhGO4w
-
-# 6. Jekyll collections settings
+  # 6. Jekyll collections settings
 defaults:
   -
     scope:
@@ -72,46 +57,45 @@ defaults:
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 lang: en-US # Set the site language
-title: "Blog++" # Site name or title, also used in jekyll-seo-tag
+title: 2nd Gig # Site name or title, also used in jekyll-seo-tag
+title_logo_1: "2nd"
+title_logo_2: "gig"
 logo: "/assets/logo.svg" # Site logo, also used in jekyll-seo-tag
-description: "Computer Science Things" # Site description and default description, also used in jekyll-seo-tag
+description: "Site description" # Site description and default description, also used in jekyll-seo-tag
 url: "hpquintana.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
-repo: "https://github.com/daviddarnes/alembic"
+repo: "https://github.com/hpquintana/noah-template-jekyll"
 email: "hector.quintana.dev@gmail.com"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 avatarurl: "https://pbs.twimg.com/profile_images/830090298214658049/-DVdkGBN_400x400.jpg" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
-# google_analytics: ''
+google_analytics: 'UA-131623633-1'
 # service_worker: false # Will turn off the service worker if set to false
 css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 
-# 8. Site navigation
+# Site navigation
 navigation_header:
-  Home: /blog/
-  Categories: /categories/
-  Search: /search/
+  Home: /
   About: /about/
-  CV: /resume/
+  # Portfolio: /portfolio/
+  Blog: /blog/
 
-navigation_footer:
-  Alembic Theme by David Darnes: https://darn.es
+
+testimonials: 
+
+footer_about_title: 'Get in Touch' 
+footer_about_desc: 'Follow on my social medias'
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Twitter: https://twitter.com/hpquintana_dev
-  # LinkedIn: https://www.linkedin.com/in/daviddarnes
-  # Google+: https://plus.google.com/+DavidDarnes
+  # Facebook: 
+  # LinkedIn: 
   GitHub: https://github.com/hpquintana
-  link: https://hpquinta.github.io
-  RSS: /feed.xml
 
-sharing_links: # Appear at the bottom of single blog posts, uncomment and comment out as desired. Colours set the button colour
-  Twitter: "#0d94e7"
-  facebook: "#3B5998"
-  Google+: "#DC4E41"
-  # Pinterest: "#BD081C"
-  # LinkedIn: "#0077B5"
-  # tumblr: "#36465D"
-  # Reddit: "#FF4500"
-  # Hacker News: "#ff6600"
-  # Designer News: "#2D72D9"
-  # Email: ""
+collections:
+  posts:
+    title: Posts # Needed for Siteleaf
+    output: true
+  portfolio:
+    title: Portfolio
+    output: true
+    permalink: /:collection/:title/

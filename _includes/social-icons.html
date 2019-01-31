@@ -1,0 +1,16 @@
+{% if site.social_links %}
+<p class="colorlib-social-icons">
+    {% if site.social_links.Facebook %}
+    <a href="{{ site.social_links.Facebook }}"><i class="icon-facebook4"></i></a>
+    {% endif %}
+    {% if site.social_links.Twitter %}
+    <a href="{{ site.social_links.Twitter }}"><i class="icon-twitter3"></i></a>
+    {% endif %}
+    {% if site.social_links.LinkedIn %}
+    <a href="{{ site.social_links.LinkedIn }}"><i class="icon-linkedin2"></i></a>
+    {% endif %}
+    {% if site.social_links.GitHub %}
+    <a href="{{ site.social_links.GitHub }}"><i class="icon-github"></i></a>
+    {% endif %}
+</p>
+{% endif %}

@@ -1,31 +1,68 @@
 ---
 layout: default
 ---
+<div id="colorlib-blog">
+    <div class="container">
+        <div class="row text-center">
+            <h2 class="bold">{{ site.title }}</h2>
+        </div>
+        {% include post-meta.html %}
+        <div class="row">
+            <div class="col-md-12">
+                <div class="rotate">
+                    <h2 class="heading">Blog Post</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="work-entry animate-box">
+                    {% if page.featured_image %}
+                    <img class="img-cover" src="{{ page.featured_image }}" alt="{{ page.featured_image_alt }}">
+                    {% endif %}
+                    </a>
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="desc">
+                            <p class="read">
+                                {% if page.featured_image and page.featured_image_credit and
+                                page.featured_image_backlink %}
+                                <a href="{{ page.featured_image_backlink }}">{{ page.featured_image_credit }}</a>
+                                {% endif %}
+                            </p>
+                            {{ content }}
+                            <div class="author text-center">
+                                <!-- <a href="about.html" class="author-img" style="background-image: url(images/about.jpg);"></a>
+                                            <h3><a href="about.html">Vanessa Morgan</a></h3>
+                                            <p>Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p> -->
+                                {% include social-icons.html %}
+                            </div>
+                            <div class="row">
+                                {% if page.previous.url %}
+                                <div class="col-md-6 text-left">
+                                    <a href="{{page.previous.url}}" class="nav-next-prev">
+                                        <span><i class="icon-arrow-left3"></i> Previous</span>
+                                        <h3>{{page.previous.title}}</h3>
+                                    </a>
+                                </div>
+                                {% endif %}
 
-{% include site-header.html %}
+                                {% if page.next.url %}
+                                <div class="col-md-6 text-right">
+                                    <a href="{{page.next.url}}" class="nav-next-prev">
+                                        <span>Next <i class="icon-arrow-right3"></i></span>
+                                        <h3>{{page.next.title}}</h3>
+                                    </a>
+                                </div>
+                                {% endif %}
 
-<main class="main  container">
-
-  <article class="article  article--post  content  typeset">
-
-    <h1>{{ page.title }}</h1>
-    {% include post-meta.html %}
-    {{ content }}
-
-    {% include nav-share.html %}
-
-    {% include post-comments.html %}
-
-  </article>
-
-  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
-
-</main>
-
-<!-- <div class="just-comments" data-allowguests="true" data-apikey="bf773ad9-b149-43a9-8609-4f7dda869e57"></div>
-<script async src="https://just-comments.com/w.js"></script> -->
-<div class="disqus">
-  {% include disqus.html %}
+                            </div>
+                            <div class="disqus">
+                                {% include disqus.html %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-{% include site-footer.html %}

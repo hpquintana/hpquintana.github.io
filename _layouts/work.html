@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<div id="colorlib-blog">
+    <div class="container">
+        <div class="row text-center">
+            <h2 class="bold">{{ site.title }}</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+                <h2>{{ page.title }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="rotate">
+                    <h2 class="heading">Work Post</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="work-entry animate-box">
+                    {% if page.featured_image %}
+                    <img class="img-cover" src="{{ page.featured_image }}" alt="{{ page.featured_image_alt }}">
+                    {% endif %}
+                    </a>
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="desc">
+                            <p class="read">
+                                {% if page.featured_image and page.featured_image_credit and
+                                page.featured_image_backlink %}
+                                <a href="{{ page.featured_image_backlink }}">{{ page.featured_image_credit }}</a>
+                                {% endif %}
+                            </p>
+                            <p style="display: inline;">{% include post-reading-time.erb %}</p>
+                            {{ content }}
+                            <div class="author text-center">
+                                <!-- <a href="about.html" class="author-img" style="background-image: url(images/about.jpg);"></a>
+                                            <h3><a href="about.html">Vanessa Morgan</a></h3>
+                                            <p>Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p> -->
+                                {% include social-icons.html %}
+                            </div>
+                            {% include post-next-prev.html %}
+                            <div class="disqus">
+                                {% include disqus.html %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

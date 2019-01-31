@@ -1,17 +1,11 @@
-{% if page.categories %}
-  {% capture categories %}
-    {% for category in page.categories %}
-      <span class="label  label--category"><a href="{{ site.baseurl }}/categories/#{{ category | downcase }}">{{ category }}</a></span>{% if forloop.last == false %},{% endif %}
-    {% endfor %}
-  {% endcapture %}
-{% elsif page.category %}
-  {% capture categories %}
-    <span class="label  label--category"><a href="{{ site.baseurl }}/categories/#{{ page.category | downcase }}">{{ page.category }}</a></span>
-  {% endcapture %}
-{% endif %}
-
-<small class="small  post-meta">
-  {% assign date_format = site.date_format | default: "%d %b %Y" %}
-  {{ categories | append: "&nbsp;&middot;&nbsp;" }}<time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date: date_format }}</time>
-  {{ append: "&nbsp;&middot;&nbsp;" }} <p style="display: inline;"> · {% include post-reading-time.erb %}</p>
-</small>
+<div class="row">
+    <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+        <h2>{{ page.title }}</h2>
+        <span><small>{{ page.date | date: "%-d, %B %Y" }} | {% include post-reading-time.erb %}</small></span>
+        {% if page.categories %}
+            {% for category in page.categories %}
+                <a class="btn btn-primary btn-outline" href="#">{{ category }}</a>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>

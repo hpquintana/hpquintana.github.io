@@ -1,0 +1,12 @@
+{% if site.footer_about_desc %}
+<div class="col-md-4 col-pb-sm">
+    <div class="row">
+        <div class="col-md-10">
+            <h2>{{ site.footer_about_title }}</h2>
+            <p>{{ site.footer_about_desc }}</p>
+            <p><a href="#">{{ site.email }}</a></p>
+            {% include social-icons.html %}
+        </div>
+    </div>
+</div>
+{% endif %}

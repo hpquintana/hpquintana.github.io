@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<div id="colorlib-blog">
+    <div class="container">
+        <div class="row text-center">
+            <h2 class="bold">Portfolio</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+                <h2>Previous Work</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="rotate">
+                    <h2 class="heading">Portfolio</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            {% for work in site.portfolio %}
+            <div class="col-md-4">
+                <div class="article">
+                    <a href="{{ work.url | relative_url }}" class="blog-img">
+                        {% if work.featured_image %}
+                        <img class="img-cover" src="{{ work.featured_image }}" alt="{{ work.featured_image_alt }}">
+                        {% else %}
+                        <img class="img-cover" src="{{ "/assets/images/img-1.jpg" | relative_url }}" alt="work cover image">
+                        {% endif %}
+                        <div class="overlay"></div>
+                        <div class="link">
+                            <span class="read">Read more</h2>
+                        </div>
+                    </a>
+                    <div class="desc">
+                        <h2><a href="{{ work.url | relative_url }}">{{ work.title | escape }}</a></h2>
+                        <p>{{ work.content | strip_html | truncatewords: 30 }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

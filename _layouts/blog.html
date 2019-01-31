@@ -1,34 +1,73 @@
 ---
 layout: default
 ---
+<div id="colorlib-blog">
+    <div class="container">
+        <div class="row text-center">
+            <h2 class="bold">Posts</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+                <h2>Post History</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="rotate">
+                    <h2 class="heading">Blog</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            {% for post in paginator.posts %}
+            <div class="col-md-4">
+                <div class="article">
+                    <a href="{{ post.url | relative_url }}" class="blog-img">
+                        {% if post.featured_image %}
+                        <img class="img-responsive" src="{{ post.featured_image }}" alt="{{ post.featured_image_alt }}">
+                        {% else %}
+                        <img class="img-responsive" src="{{ "/assets/images/img-1.jpg" | relative_url }}" alt="work cover image">
+                        {% endif %}
+                        <div class="overlay"></div>
+                        <div class="link">
+                            <span class="read">Read more</h2>
+                        </div>
+                    </a>
+                    <div class="desc">
+                        <span class="meta">{{ post.date | date: "%-d, %B %Y" }}</span>
+                        <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+                        <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
 
-{% include site-header.html %}
+        <!-- 
+    Showing buttons to move to the next and to the previous list of posts (pager buttons).
+    -->
+        {% if paginator.total_pages > 1 %}
+        <div class="row">
+            <div class="col-md-6 text-left">
+                {% if paginator.previous_page %}
 
-<main class="main  container">
+                <a href="{{ paginator.previous_page_path | replace: 'index.html', '' | prepend: site.baseurl | replace: '//', '/' }}" class="nav-next-prev">
+                    <span><i class="icon-arrow-left3"></i> Newer Posts</span>
+                </a>
 
-  <div class="content">
+                {% endif %}
+            </div>
 
-    <article class="article  article--page  typeset">
+            <div class="col-md-6 text-right">
+                {% if paginator.next_page %}
 
-      {% if paginator.posts %}
-        {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-        <h1>{{ collectiondata.title }}</h1>
-        {{ collectiondata.description | markdownify }}
+                <a href="{{ paginator.next_page_path | replace: 'index.html', '' | prepend: site.baseurl | replace: '//', '/' }}" class="nav-next-prev">
+                    <span>Older Posts <i class="icon-arrow-right3"></i></span>
+                </a>
 
-      {% else %}
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-        
-      {% endif %}
-
-    </article>
-
-    {% include post-list.html %}
-
-  </div>
-
-  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
-
-</main>
-
-{% include site-footer.html %}
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>

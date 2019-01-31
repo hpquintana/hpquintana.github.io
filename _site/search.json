@@ -1,0 +1,57 @@
+
+
+[
+  
+  
+    
+    
+  
+    
+    
+      {
+        "title": "2nd Gig",
+        "excerpt": "You might be wondering why the site is called “2nd Gig”. Well, it’s simple, this is my second attempt at creating a personal site. My previous attempt was only a month ago, it was a sort of new year’s resolution. It was meant to get me to focus on improving my professional skills every day and collaborate with others. The site was a success, as it caused me to learn Jekyll.\n\nThe first version of this site was created using the Alembic Theme. Being honest I did not really like the theme too much, I appreciated it’s simplicity and features, such as search and category page, but wanted something that was more “me”. So I decided to look around and ended up finding a theme by Colorlib, Noah. I felt it was modern, there was just one major problem. It was an HTML theme and the site runs on Jekyll. I could have just done a regular HTML site… but I decided to challenge myself by porting it over to Jekyll. Now the site is about halfways ported over to Jekyll, some pages that I won’t use are untouched, but it’s enough to get going with my 2nd Gig. You can find the Jekyll version of the theme at its GitHub repo. Feel free to use it how you like, just remember to comply with its software license.\n\nIn the coming days, I’ll keep working on the Jekyll port of the theme, but I’ll begin to add to my portfolio. Blog posts will be scarce in the upcoming weeks but I do plan on making some posts that cover the basics of Java, JavaScript, Android, and more. Alongside that, I might post tutorials on some more Jekyll related topics as I keep running into issues that are only solved after reading long GitHub threads. So with that thanks for reading.\n",
+        "content": "You might be wondering why the site is called “2nd Gig”. Well, it’s simple, this is my second attempt at creating a personal site. My previous attempt was only a month ago, it was a sort of new year’s resolution. It was meant to get me to focus on improving my professional skills every day and collaborate with others. The site was a success, as it caused me to learn Jekyll.\n\nThe first version of this site was created using the Alembic Theme. Being honest I did not really like the theme too much, I appreciated it’s simplicity and features, such as search and category page, but wanted something that was more “me”. So I decided to look around and ended up finding a theme by Colorlib, Noah. I felt it was modern, there was just one major problem. It was an HTML theme and the site runs on Jekyll. I could have just done a regular HTML site… but I decided to challenge myself by porting it over to Jekyll. Now the site is about halfways ported over to Jekyll, some pages that I won’t use are untouched, but it’s enough to get going with my 2nd Gig. You can find the Jekyll version of the theme at its GitHub repo. Feel free to use it how you like, just remember to comply with its software license.\n\nIn the coming days, I’ll keep working on the Jekyll port of the theme, but I’ll begin to add to my portfolio. Blog posts will be scarce in the upcoming weeks but I do plan on making some posts that cover the basics of Java, JavaScript, Android, and more. Alongside that, I might post tutorials on some more Jekyll related topics as I keep running into issues that are only solved after reading long GitHub threads. So with that thanks for reading.\n",
+        "url": "/intro/2019/01/30/2nd-Gig/"
+      },
+    
+  
+  
+  
+  {
+    "title": "About Me",
+    "excerpt": "\n",
+    "content": "\n",
+    "url": "/about/"
+  },
+  
+  {
+    "title": "My page",
+    "excerpt": "\n",
+    "content": "\n",
+    "url": "/"
+  },
+  
+  {
+    "title": "My page",
+    "excerpt": "\n",
+    "content": "\n",
+    "url": "/test-post/"
+  },
+  
+  {
+    "title": "2nd Gig",
+    "excerpt": "\n",
+    "content": "\n",
+    "url": "/portfolio/index.html"
+  },
+  
+  {
+    "title": "2nd Gig",
+    "excerpt": "\n",
+    "content": "\n",
+    "url": "/blog/index.html"
+  }
+  
+]
+

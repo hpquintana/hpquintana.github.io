@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md-6 text-left">
+        {% if page.previous.url %}
+
+        <a href="{{page.previous.url}}" class="nav-next-prev">
+            <span><i class="icon-arrow-left3"></i> Previous</span>
+            <h3>{{page.previous.title}}</h3>
+        </a>
+
+        {% endif %}
+    </div>
+    <div class="col-md-6 text-right">
+        {% if page.next.url %}
+
+        <a href="{{page.next.url}}" class="nav-next-prev">
+            <span>Next <i class="icon-arrow-right3"></i></span>
+            <h3>{{page.next.title}}</h3>
+        </a>
+
+        {% endif %}
+    </div>
+
+</div>

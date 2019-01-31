@@ -1,3 +1,4 @@
 ---
-layout: split
+title: My page
+layout: home
 ---
