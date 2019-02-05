@@ -21,8 +21,8 @@
         </div>
         <div class="row">
             {% for work in site.portfolio limit: 4 %}
-                <div class="col-md-12">
-                    <div class="work-entry animate-box">
+                <div class="col-md-6">
+                    <div class="work-entry animate-box ">
                         {% if work.featured_image %}
                             <a href="{{ work.url }}" class="work-img" style="background-image: url({{ work.featured_image }});">
                         {% else %}

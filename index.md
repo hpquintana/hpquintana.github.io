@@ -1,4 +1,4 @@
 ---
-title: My page
+title: Home
 layout: home
 ---

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>2nd Gig | 2nd Gig</title>
+	<title>URL Shortener - Firebase | 2nd Gig</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -138,26 +138,37 @@
         </div>
         <div class="row">
     <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-        <h2>2nd Gig</h2>
-        <span><small>30, January 2019 
+        <h2>URL Shortener - Firebase</h2>
+        <span><small>4, February 2019 
 
     
     
+        3
     
-         minute to read
+    
+         minutes to read
     
 </small></span>
         
             
-                <a class="btn btn-primary btn-outline" href="#">Intro</a>
+                <a class="btn btn-primary btn-outline" href="#">Firebase</a>
+            
+                <a class="btn btn-primary btn-outline" href="#">Express.js</a>
+            
+                <a class="btn btn-primary btn-outline" href="#">TypeScript</a>
             
         
     </div>
 </div>
+        <!-- <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+                <h2>URL Shortener - Firebase</h2>
+            </div>
+        </div> -->
         <div class="row">
             <div class="col-md-12">
                 <div class="rotate">
-                    <h2 class="heading">Blog Post</h2>
+                    <h2 class="heading">Portfolio Item</h2>
                 </div>
             </div>
         </div>
@@ -165,21 +176,45 @@
             <div class="col-md-12">
                 <div class="work-entry animate-box">
                     
-                    <img class="img-cover" src="/assets/img/posts/rawpixel-783422-unsplash.jpg" alt="">
+                    <img class="img-cover" src="/assets/img/portfolio/juan-gomez-674574-unsplash.jpg" alt="">
                     
                     </a>
                     <div class="col-md-10 col-md-offset-1">
                         <div class="desc">
                             <p class="read">
                                 
-                                <a href="https://unsplash.com/photos/F6jdheXbnDQ">Photo by rawpixel on Unsplash</a>
+                                <a href="https://unsplash.com/photos/kt-wA0GDFq8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Photo by Juan Gomez on Unsplash</a>
                                 
                             </p>
-                            <p>You might be wondering why the site is called “2nd Gig”. Well, it’s simple, this is my second attempt at creating a personal site. My previous attempt was only a month ago, it was a sort of new year’s resolution. It was meant to get me to focus on improving my professional skills every day and collaborate with others. The site was a success, as it caused me to learn Jekyll.</p>
+                            <p>As the name states this is a url shortener built on Firebase, it uses Firebase Realtime Database, Firebase Cloud Functions + Express.js, and Firebase Hosting. At it’s core the project used these services to query and read from the database to see if any data exits. The services are exposed in two ways; http endpoints that automatically handle things and API endpoints that respond in JSON. Let’s walk through some scenarios using HTTP.</p>
 
-<p>The first version of this site was created using the <a href="https://github.com/daviddarnes/alembic">Alembic Theme</a>. Being honest I did not really like the theme too much, I appreciated it’s simplicity and features, such as search and category page, but wanted something that was more “me”. So I decided to look around and ended up finding a theme by Colorlib, <a href="https://colorlib.com/preview/#noah">Noah</a>. I felt it was modern, there was just one major problem. It was an HTML theme and the site runs on Jekyll. I could have just done a regular HTML site… but I decided to challenge myself by porting it over to Jekyll. Now the site is about halfways ported over to Jekyll, some pages that I won’t use are untouched, but it’s enough to get going with my 2nd Gig. You can find the Jekyll version of the theme at its <a href="https://github.com/hpquintana/noah-template-jekyll">GitHub repo</a>. Feel free to use it how you like, just remember to comply with its software license.</p>
+<h2 id="prerequisites">Prerequisites</h2>
 
-<p>In the coming days, I’ll keep working on the Jekyll port of the theme, but I’ll begin to add to my portfolio. Blog posts will be scarce in the upcoming weeks but I do plan on making some posts that cover the basics of Java, JavaScript, Android, and more. Alongside that, I might post tutorials on some more Jekyll related topics as I keep running into issues that are only solved after reading long GitHub threads. So with that thanks for reading.</p>
+<p>Before starting let’s talk about the project set up. The project is completely hosted on Firebase, this makes it easy to reroute URL requests through various ways. For this project we’ll be rerouting requests from <code class="highlighter-rouge">baseURL/r/${UUID}</code> to the function “reroute”. This will allow us to instantly process at the server level. As we will have an API we also need to set up an Express path, <code class="highlighter-rouge">/v0/url/:urlId/</code>. Lastly, we’ll set up two functions, shortenURL and redirect.</p>
+
+<h2 id="generating-shortened-url">Generating Shortened URL</h2>
+
+<p>Now that we have an idea of the set up let’s walk through the process of shortening a URL. A user goes to the <a href="https://url-shortner-3a035.firebaseapp.com/url">project homepage</a> where they can input the url. Once the user hits shorten we check the input to verify it is a valid url. If it is then we use the Firebase SDK to inoke our “onCall” function shortenURL. By using the Firebase SDK we don’t have to worry about the function’s url, preparing our request, and interpeting our response.</p>
+
+<p>Now in the shortenURL function we sanitize our input, we remove trailing slashes and http info. This helps us avoid duplicates and makes it slightly easier to query. With our sanitized input ready we query the database for any entry that has our input as their original url. If an entry is found then we send the information back. Otherwise we generate a UUID, use it as a key for a new database entry. Once the entry is created we send back this entry.</p>
+
+<p>Now in our client we receive a database entry, that was either new or existing, we then display this information to the user. And voila, we shortened a URL.</p>
+
+<h2 id="using-shortened-url-http">Using Shortened URL (HTTP)</h2>
+
+<p>Consuming a shorted URL is even simpler than generating it because of Firebase. The format of a shorted URL is <code class="highlighter-rouge">baseURL/r/${UUID}</code>, as per our set up any call to /r/ will be sent to the redirect function. Inside this function we use the UUID to directly find the exact entry in the database for our shortened URL, no querying required! If it exits we retrieve the original URL and send back a response that redirects the user to the original URL. If no entry is found then we redirect to the project home page.</p>
+
+<h2 id="closing-thoughts">Closing Thoughts</h2>
+
+<p>This write up isn’t meant to detail every step to recreate the project. It’s meant to give you an overview of the project. If you’re interested in learning more about feel free to visit the project repo and give it a try at the live link above. The project does use TypeScipt and some intermediate features of Firebase. So if you have any questions about it feel free to reach out.</p>
+
+<p>Thanks for reading.</p>
+
+<h2 id="live-demo">Live Demo</h2>
+<p><a href="https://url-shortner-3a035.firebaseapp.com/url">Link</a></p>
+
+<h2 id="source-code">Source Code</h2>
+<p><a href="https://github.com/hpquintana/url-shortener">GitHub Repo</a></p>
 
                             <div class="author text-center">
                                 <!-- <a href="about.html" class="author-img" style="background-image: url(images/about.jpg);"></a>
@@ -196,12 +231,6 @@
     <a href="https://github.com/hpquintana"><i class="icon-github"></i></a>
     
 </p>
-
-                            </div>
-                            <div class="row">
-                                
-
-                                
 
                             </div>
                             <div class="disqus">

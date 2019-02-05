@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
         <h2>{{ page.title }}</h2>
-        <span><small>{{ page.date | date: "%-d, %B %Y" }} | {% include post-reading-time.erb %}</small></span>
+        <span><small>{{ page.date | date: "%-d, %B %Y" }} {% include post-reading-time.erb %}</small></span>
         {% if page.categories %}
             {% for category in page.categories %}
                 <a class="btn btn-primary btn-outline" href="#">{{ category }}</a>
