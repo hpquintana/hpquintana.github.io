@@ -5,11 +5,11 @@
         <h2 class="head-title">Portfolio</h2>
             {% for work in site.portfolio limit: 4 %}
                 {% if work.featured_image %}
-                <a href="{{ work.url }}" class="gallery image-popup-link text-center" style="background-image: url({{ work.featured_image }});">
+                <a href="{{ work.url }}" class="gallery  text-center" style="background-image: url({{ work.featured_image }});">
                     <span><i class="icon-search3"></i></span>
                 </a>
                 {% else %}
-                <a href="{{ work.url }}" class="gallery image-popup-link text-center" style="background-image: url({{ "/assets/images/work-1.jpg" | relative_url }});">
+                <a href="{{ work.url }}" class="gallery  text-center" style="background-image: url({{ "/assets/images/work-1.jpg" | relative_url }});">
                     <span><i class="icon-search3"></i></span>
                 </a>
                 {% endif %}
