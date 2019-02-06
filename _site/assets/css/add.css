@@ -47,3 +47,7 @@ ul.timeline>li:before {
     float: none;
     margin: 0 auto;
 }
+
+.desc p img {
+    max-width: 100%;
+} 

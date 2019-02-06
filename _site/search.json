@@ -12,6 +12,13 @@
         "url": "/portfolio/url_shortener/"
       },
     
+      {
+        "title": "A&S Tech",
+        "excerpt": "Build upon the basics. This project at the moment is just a basic HTML homepage for online marketers A&amp;S Tech. It was created using Bootstrap 4 and using A&amp;S Tech’s design as a guideline. In the coming weeks I’ll be porting the site over to Jekyll in order to allow the team at A&amp;S to easily create content for the site.\n\nThe site is hosted on GitHub Pages and uses a custom domain. DNS is handled by CloudFlare, allowing for easy sub domain creation and improved speeds.\n\nCheck out the site here.\n\n\n",
+        "content": "Build upon the basics. This project at the moment is just a basic HTML homepage for online marketers A&amp;S Tech. It was created using Bootstrap 4 and using A&amp;S Tech’s design as a guideline. In the coming weeks I’ll be porting the site over to Jekyll in order to allow the team at A&amp;S to easily create content for the site.\n\nThe site is hosted on GitHub Pages and uses a custom domain. DNS is handled by CloudFlare, allowing for easy sub domain creation and improved speeds.\n\nCheck out the site here.\n\n\n",
+        "url": "/portfolio/anstech/"
+      },
+    
   
     
     

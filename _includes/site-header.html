@@ -6,21 +6,15 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<meta name="author" content="{{ site.author }}" />
-	<html lang="{{ site.lang | default: "en-US" }}">
 
-	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ "/assets/favicon/apple-touch-icon.png" | relative_url }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/favicon/favicon-32x32.png" | relative_url }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/favicon/favicon-16x16.png" | relative_url }}">
+	<link rel="manifest" href="{{ "/assets/favicon/site.webmanifest" | relative_url }}">
+	<link rel="mask-icon" href="{{ "/assets/favicon/safari-pinned-tab.svg" | relative_url }}" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	
 	{% include google-analytics.html %}
 
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
@@ -31,20 +25,18 @@
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="{{ "/assets/css/icomoon.css" | relative_url }}">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="{{ "/assets/css/bootstrap.css" | relative_url }}">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+	crossorigin="anonymous">
 	<!-- Owl Carousel -->
 	<link rel="stylesheet" href="{{ "/assets/css/owl.carousel.min.css" | relative_url }}">
 	<link rel="stylesheet" href="{{ "/assets/css/owl.theme.default.min.css" | relative_url }}">
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="{{ "/assets/css/magnific-popup.css" | relative_url }}">
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"> -->
 
 	<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 	<link rel="stylesheet" href="{{ "/assets/css/add.css" | relative_url }}">
 
-
 	<!-- Modernizr JS -->
 	<script src="{{ "/assets/js/modernizr-2.6.2.min.js" | relative_url }}"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script> -->
 
 </head>
